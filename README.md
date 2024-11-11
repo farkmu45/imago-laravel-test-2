@@ -95,3 +95,25 @@ The application exposes the following API endpoints:
 - Name: Required, maximum 255 characters
 - Email: Required, valid email format, maximum 255 characters
 - Comment: Required, minimum 10 characters
+
+## Troubleshooting
+
+1. If you encounter database issues:
+```bash
+php artisan config:clear
+php artisan cache:clear
+```
+
+2. If the styles are not loading:
+```bash
+npm run dev
+```
+or for production:
+```bash
+npm run build
+```
+
+3. To reset the database and migrations:
+```bash
+php artisan migrate:fresh
+```
