@@ -13,6 +13,7 @@ class StoreFeedbackRequest extends FormRequest
 
     public function rules(): array
     {
+        // Validate request data
         return [
             'name' => 'required|max:255',
             'email' => 'required|email|max:255',
