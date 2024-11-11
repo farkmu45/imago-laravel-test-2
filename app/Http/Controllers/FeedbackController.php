@@ -26,7 +26,7 @@ class FeedbackController extends Controller
 
     public function index()
     {
-        $feedback = Feedback::orderBy('created_at', 'desc')->get();
+        $feedback = Feedback::latest()->get();
         return response()->json($feedback);
     }
 }
