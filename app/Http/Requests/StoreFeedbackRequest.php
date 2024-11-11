@@ -16,7 +16,7 @@ class StoreFeedbackRequest extends FormRequest
         return [
             'name' => 'required|max:255',
             'email' => 'required|email|max:255',
-            'comment' => 'required|min:10'
+            'comment' => 'required|min:10',
         ];
     }
 }
